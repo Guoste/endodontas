@@ -1,3 +1,4 @@
+/*#bcbabe
 /*Common*/
 body {
     font-family: 'Didact Gothic', sans-serif;
@@ -12,12 +13,14 @@ h1 {
 /* navbar*/
 .navbar {
     background-color: #f1f1f2;
+    -webkit-filter: drop-shadow(-2px 2px 3px rgba(0,0,0,0.3));
 }
-.navbar-brand {
+.navbar-light .navbar-brand {
     margin: 10px 30px 0px 15px;
     font-size: 20px;
     letter-spacing:2px;
     font-weight: bold; 
+    color: #1995ad;
 }
 .navbar-brand img {
     margin: 0 15px;
@@ -28,11 +31,8 @@ h1 {
     font-size: 20px;
     margin: 0 20px 0 20px;
    }
-.navbar-light .navbar-nav .nav-link, .navbar-light .navbar-brand  {
+.navbar-light .navbar-nav .nav-link, .navbar-light {
     color: #1995ad;
-}
-.navbar-light .navbar-toggler {
-    background-color: #1995ad; 
 }
 .navbar-light .navbar-brand:hover {
     color: #1995ad;
@@ -51,10 +51,8 @@ h1 {
 }
 /* main-slide*/
 .main-slide {
-background-color: #1995ad;
-/* background: url("img/2.jpg") 0 center;
-background-size: cover;  */
-padding: 150px 0 60px 0;
+    background-color: #1995ad;
+    padding: 150px 0 60px 0;
 }
 .main-slide img {
     -webkit-filter: drop-shadow(-2px 2px 3px rgba(0,0,0,0.3));
@@ -69,13 +67,26 @@ padding: 150px 0 60px 0;
     margin: auto;
     text-shadow: 2px 2px 1px rgba(0,0,0,0.2);
 }
+.services-line:hover {
+    position: relative;
+    top: -2px;
+    cursor: pointer;
+}
+.services-line-first:hover {
+    .main-slide img
+}
 /*about-us*/
 .about-us {
-    background-color: #a1d6e2;
+    background-color: #f1f1f2;
     padding: 60px 0;
+    
+}
+.about-us h1 {
+    color: #000;
 }
 .about-us-text {
-color:#fff;
+    color: #000;
+    margin-bottom: 30px;
 }
 .LED-logo {
     max-height: 100px;
@@ -86,7 +97,7 @@ color:#fff;
 }
 /*services*/
 .services {
-    background-color: #f1f1f2;
+    background-color: #a1d6e2;
     padding: 60px 0;
 }
 
@@ -94,5 +105,10 @@ color:#fff;
 .contacts {
 background-color: #1995ad;
 padding: 60px 0; 
+}
+.contacts-text {
+    color: #fff;
+    font-size: 20px;
+
 }
 
