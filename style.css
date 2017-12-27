@@ -12,15 +12,15 @@ h1 {
 
 /* navbar*/
 .navbar {
-    background-color: #f1f1f2;
+    background-color: #1995ad;
     -webkit-filter: drop-shadow(-2px 2px 3px rgba(0,0,0,0.3));
 }
 .navbar-light .navbar-brand {
-    margin: 10px 30px 0px 15px;
+    margin: 0px 30px 0px 15px;
     font-size: 20px;
     letter-spacing:2px;
     font-weight: bold; 
-    color: #1995ad;
+    color: #fff;
 }
 .navbar-brand img {
     margin: 0 15px;
@@ -32,18 +32,18 @@ h1 {
     margin: 0 20px 0 20px;
    }
 .navbar-light .navbar-nav .nav-link, .navbar-light {
-    color: #1995ad;
+    color: #f1f1f2;
 }
 .navbar-light .navbar-brand:hover {
-    color: #1995ad;
+    color: #fff;
 }
 .navbar-light .navbar-nav .nav-link:hover {
     position: relative;
     top: -2px;
-    color: #1995ad;
+    color: #fff;
 }
 .header-contacts {
-    color: #1995ad
+    color: #fff;
 }
 .phone {
     font-weight: bold;
@@ -51,34 +51,47 @@ h1 {
 }
 /* main-slide*/
 .main-slide {
-    background-color: #1995ad;
-    padding: 150px 0 60px 0;
+    background-color: #a1d6e2;
+    background-size: cover;
+    padding: 60px 0; 
 }
-.main-slide img {
-    -webkit-filter: drop-shadow(-2px 2px 3px rgba(0,0,0,0.3));
-    width: 300px;
+.circle-container {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    border: dashed 1px #fff;
+    border-radius: 50%;
     margin: auto;
+    background: url("img/tooth_big.png") center no-repeat;
+    background-size: 150px 200px;
 }
-.services-main {
-    color: #fff;
-    font-size: 30px;
+.circle-container a {
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    max-width: 150px; 
+    margin: -40px;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 20px;
     font-weight: bold;
     text-transform: uppercase;
-    margin: auto;
     text-shadow: 2px 2px 1px rgba(0,0,0,0.2);
 }
-.services-line:hover {
-    position: relative;
-    top: -2px;
-    cursor: pointer;
+.circle-container a:hover {
+    text-decoration: none;
+    color: #fff;
 }
-.services-line-first:hover {
-    .main-slide img
-}
+.deg0 { transform: translate(200px); }
+.deg45 { transform: rotate(45deg) translate(200px) rotate(-45deg); }
+.deg135 { transform: rotate(135deg) translate(200px) rotate(-135deg); }
+.deg180 { transform: translate(-200px); }
+.deg225 { transform: rotate(225deg) translate(200px) rotate(-225deg); }
+.deg315 { transform: rotate(315deg) translate(200px) rotate(-315deg); }
+
 /*about-us*/
 .about-us {
     background-color: #f1f1f2;
-    padding: 60px 0;
+    padding: 100px 0;
     
 }
 .about-us h1 {
@@ -98,7 +111,7 @@ h1 {
 /*services*/
 .services {
     background-color: #a1d6e2;
-    padding: 60px 0;
+    padding: 100px 0;
 }
 
 /*contacts*/
@@ -111,4 +124,8 @@ padding: 60px 0;
     font-size: 20px;
 
 }
+
+
+
+
 

@@ -5,16 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Odontologijos kabinetas</title>
 
 </head>
 <body>
-    <header>
-        <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+    <header class="sticky-top">
+        <nav class="navbar  navbar-expand-lg navbar-light">
           <div class="container-fluid">
           <a class="navbar-brand" href="index.html">
             <div class="row">
@@ -48,16 +46,23 @@
 
     <section class="main-slide"> 
         <div class= "container">
-        <div class="row">
-          <img class="col-xs" src="img/tooth_big.png">
-          <div class="services-main col-xs">
-             <p class="services-line services-line-first"><i class="material-icons">keyboard_arrow_right</i>Konsultavimas</p> 
-             <p class="services-line services-line-second"><i class="material-icons">keyboard_arrow_right</i>Dantų šaknų kanalų gydymas</p> 
-             <p class="services-line services-line-third"><i class="material-icons">keyboard_arrow_right</i>Karieso gydymas</p> 
-             <p class="services-line services-line-fourth"><i class="material-icons">keyboard_arrow_right</i>Profesionali burnos higiena</p> 
+                           
+            <div class='circle-container'>
+                  <a href='#' class='deg0 circle-container-element effect-box'>Konsultavimas</a>
+                  <a href='#' class='deg45 circle-container-element'>Dantų šaknų kanalų gydymas</a>
+                  <a href='#' class='deg135 circle-container-element'>Karieso gydymas</a>
+                  <a href='#' class='deg180 circle-container-element'>Profesionali burnos higiena</a>
+                  <a href='#' class='deg225 circle-container-element'>Profesionali burnos higiena</a>
+                  <a href='#' class='deg315 circle-container-element'>Profesionali burnos higiena</a>
+              </div>
+            <!-- <ul>
+                <li class="main-slide-consultation"><a>Konsultavimas</a></li> 
+                <li class="main-slide-canals"><a>Dantų šaknų kanalų gydymas</a></li> 
+                <li class="main-slide-cries"><a>Karieso gydymas</a></li> 
+                <li class="main-slide-hygiene"><a>Profesionali burnos higiena</a></li> 
+            </ul>  -->
+            
           </div>
-        </div> 
-        </div>
     </section> 
 
     <section class="about-us" id="about">
@@ -198,6 +203,7 @@
 
 
 
+    <script src="script.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
