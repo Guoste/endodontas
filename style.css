@@ -21,6 +21,7 @@ h1 {
     letter-spacing:2px;
     font-weight: bold; 
     color: #fff;
+    text-shadow: 2px 2px 1px rgba(0,0,0,0.2);
 }
 .navbar-brand img {
     margin: 0 15px;
@@ -72,7 +73,7 @@ h1 {
     max-width: 150px; 
     margin: -40px;
     color: rgba(255, 255, 255, 0.9);
-    font-size: 20px;
+    font-size: 21px;
     font-weight: bold;
     text-transform: uppercase;
     text-shadow: 2px 2px 1px rgba(0,0,0,0.2);
@@ -106,7 +107,6 @@ h1 {
 }
 .about-us h1 {
     color: #1995ad;
-  
 }
 .about-us-text {
     color: #000;
@@ -118,7 +118,7 @@ h1 {
     background-color: #f1f1f2;
 }
 .logos img {
-    max-height: 100px;
+    max-height: 90px;
     margin: 0 15px;
 }
 /*services*/
@@ -135,10 +135,32 @@ h1 {
 background-color: #1995ad;
 padding: 60px 0; 
 }
+#map {
+    width: 100%;
+    height: 400px;
+    background-color: grey;
+  }
 .contacts-text {
     color: #fff;
     font-size: 20px;
-
+    margin-left: 30px;
+}
+.logo-text {
+    text-shadow: 2px 2px 1px rgba(0,0,0,0.2); 
+}
+.contacts-text img {
+    margin: 0 15px;
+    -webkit-filter: drop-shadow(-2px 2px 3px rgba(0,0,0,0.3));
+}
+.contacts-text-address {
+    margin-bottom: 15px;
+}
+/*footer*/
+footer {
+background-color: #bcbabe;
+padding: 15px;
+color: #fff;
+text-align: right;
 }
 
 

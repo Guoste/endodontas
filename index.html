@@ -165,18 +165,31 @@
   <section class="contacts" id="contacts">
     <div class="container">
       <div class="row">
-        <div class="col-sm map">
-          <img src="img/map.png" alt="">
+        <div class="col-sm">
+            <div id="map"></div>
+            <script>
+                function initMap() {
+                  var uluru = {lat: 54.685138, lng: 25.277570};
+                  var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 16,
+                    center: uluru
+                  });
+                  var marker = new google.maps.Marker({
+                    position: uluru,
+                    map: map
+                  });
+                }
+              </script>
         </div>
         <div class="col-sm contacts-text">
             <div class="row">
                 <img src="img/tooth.png" alt="Odontologijos kabinetas">
-                <div>Rasos Klimaitės
-                  <br> Odontologijos kabinetas</div>
+                <div class="logo-text"><strong>Rasos Klimaitės
+                    <br> Odontologijos kabinetas</strong></div>
               </div>
                <hr> 
-               <div>Gydomosios kosmetologijos centre, 3 kab.
-                  <br> Jogailos g. 13, Vilnius 2001</div>
+               <div class="contacts-text-address">Gydomosios kosmetologijos centre, 3 kab.
+                  <br> Jogailos g. 13 (vidiniame kieme), Vilnius 2001</div>
          
           <div><strong>Tel.: +370 5 279 18 90</strong></div>
           <div><strong> Mob. Tel.: +370 684 31 281</strong></div>
@@ -187,8 +200,12 @@
         </div>
       </div>
     </div>
-    </div>
   </section>
+  <footer>
+    <div>
+      © 2018 Rasos Klimaitės odontologijos kabinetas
+    </div>
+  </footer>
 
 
 
@@ -209,14 +226,16 @@
 
 
 
-
-  <script src="script.js"></script>
+  <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaDsxHcsMISGz-UVVqmyl926lBb2Tqh7g&callback=initMap">
+  </script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
+  crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
-    crossorigin="anonymous"></script>
+  crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
-    crossorigin="anonymous"></script>
+  crossorigin="anonymous"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
