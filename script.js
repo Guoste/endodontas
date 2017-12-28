@@ -4,7 +4,7 @@ const circleContainer = document.querySelector(".circle-container");
 
 document.querySelectorAll(".circle-container-element").forEach(function(element){
 element.addEventListener("mouseover", function(){
-    let pictureNumber =  Math.floor(Math.random() * 6);
+    let pictureNumber =  Math.floor(Math.random() * 4);
     circleContainer.style.backgroundImage = `url(img/Icy${pictureNumber}.png)`; 
 })
 element.addEventListener("mouseout", function(){

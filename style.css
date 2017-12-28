@@ -90,28 +90,44 @@ h1 {
 
 /*about-us*/
 .about-us {
-    background-color: #f1f1f2;
-    padding: 100px 0;
+   padding: 60px 0;
     
 }
+@media (max-width: 575px) {
+    .left-col-bg-gray .col-sm:first-child { background-color: #f1f1f2 }
+}
+@media (min-width: 576px) {
+    .left-col-bg-gray { 
+        background: linear-gradient(90deg, #f1f1f2 50%, #fff 50%);
+    }
+}
+.carousel {
+    margin:40px;
+}
 .about-us h1 {
-    color: #000;
+    color: #1995ad;
+  
 }
 .about-us-text {
     color: #000;
-    margin-bottom: 30px;
+    margin: 40px;   
 }
-.LED-logo {
-    max-height: 100px;
+/*logos*/
+.logos {
+    padding: 20px 0;
+    background-color: #f1f1f2;
 }
-.other-logo {
+.logos img {
     max-height: 100px;
-    margin: 10px;
+    margin: 0 15px;
 }
 /*services*/
 .services {
     background-color: #a1d6e2;
-    padding: 100px 0;
+    padding: 60px 0;
+}
+.p-3 {
+    background-color: #bcbabe;
 }
 
 /*contacts*/
