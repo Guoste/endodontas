@@ -79,7 +79,7 @@ h1 {
     top: 50%; 
     left: 50%;
     max-width: 150px; 
-    margin: -40px;
+    margin: -50px;
     color: rgba(255, 255, 255, 0.9);
     font-size: 21px;
     font-weight: bold;
@@ -198,13 +198,27 @@ text-align: right;
     .deg45 { transform: rotate(60deg) translate(130px) rotate(-60deg); }
     .deg180 { transform: translate(-100px); }
     .deg0 { transform: rotate(300deg) translate(100px) rotate(-300deg); }
+    .navbar-brand img {
+        margin: 0 3px 5px 4px;
+        width: 30px;
+        height: 40px;
+    }
     .brand-text {
-        margin-left: 15px;
-        font-size: 16px;
+        margin-left: 3px;
+        font-size: 14px;
     }
     .logos img {
         max-height: 60px;
         margin: 5px;
+    }
+    .navbar-light .navbar-toggler {
+        margin-left: 3px;
+    }
+    .phone {
+        font-size: 16px;
+    }
+    .phone a[href^=tel] {
+        color: white;
     }
 }
 
